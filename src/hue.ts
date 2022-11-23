@@ -31,8 +31,6 @@ export async function switchOn(url: string, light_id: number): Promise<void> {
 }
 
 
-
-
 function getLightState(url: string, light_id: number): Promise<boolean> {
     return axios.request({
             url: `${url}/${light_id}`,

@@ -52,9 +52,14 @@ async function run() {
                     const msg = ciContentText(resp.chatItem.chatItem.content)
                     let reply
                     if (msg == "switch") {
+                        // TODO add list lights command
+
+                        // TODO update to get ID from user
+                        
                         switchLight(url, 4)
                         reply = "Light switched"
                     } else {
+                        // TODO create enum commands
                         reply = "Not a recognised command"
                     }
 
