@@ -52,8 +52,6 @@ async function run() {
                     const msg = ciContentText(resp.chatItem.chatItem.content)
                     let reply
                     if (msg == "switch") {
-                        // switchLight(url, 2)
-                        // switchLight(url, 3)
                         switchLight(url, 4)
                         reply = "Light switched"
                     } else {
